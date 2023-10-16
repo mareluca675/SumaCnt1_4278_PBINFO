@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    long long i = 1, s = 0, nr2cif = 0, a;
+    
+    cin >> a;
+    
+    if(a % 2 == 0)
+    {
+         s = s + a;
+    }
+        
+    if(a < 100 and a > 9)
+    {
+         nr2cif++;
+    }
+    
+    while(a != 0)
+    {
+        cin >> a;
+        
+        if(a % 2 == 0)
+        {
+            s = s + a;
+        }
+        
+        if(a < 100 and a > 9)
+        {
+            nr2cif++;
+        }
+        i++;
+    }
+    
+    cout << s << " " << nr2cif;
+    
+    return 0;
+}
